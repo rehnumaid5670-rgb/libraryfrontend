@@ -44,7 +44,7 @@ function AdminDashboard() {
 
   const fetchStats = async () => {
     try {
-      const res = await axios.get("http://localhost:5000/api/admin/stats");
+      const res = await axios.get("https://thisisfinalrepoofbackend.vercel.app/");
       setStats(res.data);
       setCount(res.data.count);
     } catch (err) {

@@ -26,7 +26,7 @@ function UserFeedback() {
     try {
       setLoading(true);
 
-      await axios.post("http://localhost:5000/api/feedback", form);
+      await axios.post("https://thisisfinalrepoofbackend.vercel.app/", form);
 
       setMsg("✅ Feedback submitted successfully!");
 
